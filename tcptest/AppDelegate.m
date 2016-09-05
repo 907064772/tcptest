@@ -26,7 +26,17 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-
+    if([CLLocationManager significantLocationChangeMonitoringAvailable])
+    {
+        ViewController * vc=(ViewController *)self.window.rootViewController;
+        [vc.manager stopUpdatingLocation];
+        [vc.manager startMonitoringSignificantLocationChanges];
+    }
+    else
+    {
+        NSLog(@"significant Location Change not Available");
+    }
+    
 
     
 }
@@ -39,7 +49,16 @@
 }
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-
+    if([CLLocationManager significantLocationChangeMonitoringAvailable])
+    {
+        ViewController * vc=(ViewController *)self.window.rootViewController;
+        [vc.manager stopMonitoringSignificantLocationChanges];
+        [vc.manager startUpdatingLocation];
+    }
+    else
+    {
+        NSLog(@"significant Location Change not Available");
+    }
 
 }
 - (void)applicationWillTerminate:(UIApplication *)application
