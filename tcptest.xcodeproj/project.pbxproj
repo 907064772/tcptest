@@ -15,7 +15,6 @@
 		C009A1311CC47FED0057AC73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C009A12F1CC47FED0057AC73 /* LaunchScreen.storyboard */; };
 		C009A13C1CC47FED0057AC73 /* tcptestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C009A13B1CC47FED0057AC73 /* tcptestTests.m */; };
 		C009A1471CC47FED0057AC73 /* tcptestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C009A1461CC47FED0057AC73 /* tcptestUITests.m */; };
-		C01306501CDADAB100FBA9AA /* ProccessHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C013064F1CDADAB100FBA9AA /* ProccessHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +51,6 @@
 		C009A1421CC47FED0057AC73 /* tcptestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tcptestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009A1461CC47FED0057AC73 /* tcptestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tcptestUITests.m; sourceTree = "<group>"; };
 		C009A1481CC47FED0057AC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C013064E1CDADAB100FBA9AA /* ProccessHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProccessHelper.h; sourceTree = "<group>"; };
-		C013064F1CDADAB100FBA9AA /* ProccessHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProccessHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +105,6 @@
 				C009A1251CC47FED0057AC73 /* AppDelegate.m */,
 				C009A1271CC47FED0057AC73 /* ViewController.h */,
 				C009A1281CC47FED0057AC73 /* ViewController.m */,
-				C013064E1CDADAB100FBA9AA /* ProccessHelper.h */,
-				C013064F1CDADAB100FBA9AA /* ProccessHelper.m */,
 				C009A12A1CC47FED0057AC73 /* Main.storyboard */,
 				C009A12D1CC47FED0057AC73 /* Assets.xcassets */,
 				C009A12F1CC47FED0057AC73 /* LaunchScreen.storyboard */,
@@ -212,11 +207,6 @@
 				TargetAttributes = {
 					C009A11D1CC47FED0057AC73 = {
 						CreatedOnToolsVersion = 7.3;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
 					};
 					C009A1361CC47FED0057AC73 = {
 						CreatedOnToolsVersion = 7.3;
@@ -281,7 +271,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C009A1291CC47FED0057AC73 /* ViewController.m in Sources */,
-				C01306501CDADAB100FBA9AA /* ProccessHelper.m in Sources */,
 				C009A1261CC47FED0057AC73 /* AppDelegate.m in Sources */,
 				C009A1231CC47FED0057AC73 /* main.m in Sources */,
 			);
@@ -426,13 +415,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tcptest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs.z.tcptest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -440,13 +426,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tcptest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cs.z.tcptest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -515,7 +498,6 @@
 				C009A14D1CC47FED0057AC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		C009A14E1CC47FED0057AC73 /* Build configuration list for PBXNativeTarget "tcptestTests" */ = {
 			isa = XCConfigurationList;
@@ -524,7 +506,6 @@
 				C009A1501CC47FED0057AC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		C009A1511CC47FED0057AC73 /* Build configuration list for PBXNativeTarget "tcptestUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,7 +514,6 @@
 				C009A1531CC47FED0057AC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
